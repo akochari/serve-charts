@@ -50,5 +50,5 @@ jobs:
             if [ -z "${pkg:-}" ]; then
               break
             fi
-            helm push "${pkg}" oci://ghcr.io/scilifelabdatacentre/serve-charts || true
+            helm push "${pkg}" oci://ghcr.io/akochari/serve-charts || true
           done
